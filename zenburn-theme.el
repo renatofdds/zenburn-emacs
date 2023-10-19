@@ -357,7 +357,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(anzu-replace-to ((t (:inherit anzu-replace-highlight :foreground ,zenburn-yellow))))
 ;;;;; auctex
    `(font-latex-bold-face ((t (:inherit bold))))
-   `(font-latex-warning-face ((t (:foreground nil :inherit font-lock-warning-face))))
+   `(font-latex-warning-face ((t (:foreground unspecified :inherit font-lock-warning-face))))
    `(font-latex-sectioning-5-face ((t (:foreground ,zenburn-red :weight bold ))))
    `(font-latex-sedate-face ((t (:foreground ,zenburn-yellow))))
    `(font-latex-italic-face ((t (:foreground ,zenburn-cyan :slant italic))))
@@ -439,16 +439,16 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(cfw:face-today-title ((t (:inherit highlight bold))))
    `(cfw:face-toolbar ((t (:background ,zenburn-blue-5))))
    `(cfw:face-toolbar-button-off ((t (:underline nil :inherit link))))
-   `(cfw:face-toolbar-button-on ((t (:underline nil :inherit link-visited))))
+   `(cfw:face-toolbar-button-on ((t (:underline unspecified :inherit link-visited))))
 ;;;;; centaur-tabs
-   `(centaur-tabs-default ((t (:background ,zenburn-bg :foreground ,zenburn-fg :box nil))))
-   `(centaur-tabs-selected ((t (:background ,zenburn-bg :foreground ,zenburn-fg+2 :box nil))))
-   `(centaur-tabs-unselected ((t (:background ,zenburn-bg-1 :foreground ,zenburn-fg-05 :box nil))))
-   `(centaur-tabs-selected-modified ((t (:background ,zenburn-bg :foreground ,zenburn-orange :box nil))))
-   `(centaur-tabs-unselected-modified ((t (:background ,zenburn-bg-1 :foreground ,zenburn-orange :box nil))))
-   `(centaur-tabs-active-bar-face ((t (:background ,zenburn-yellow :box nil))))
-   `(centaur-tabs-modified-marker-selected ((t (:inherit 'centaur-tabs-selected-modified :foreground ,zenburn-yellow :box nil))))
-   `(centaur-tabs-modified-marker-unselected ((t (:inherit 'centaur-tabs-unselected-modified :foreground ,zenburn-yellow :box nil))))
+   `(centaur-tabs-default ((t (:background ,zenburn-bg :foreground ,zenburn-fg :box unspecified))))
+   `(centaur-tabs-selected ((t (:background ,zenburn-bg :foreground ,zenburn-fg+2 :box unspecified))))
+   `(centaur-tabs-unselected ((t (:background ,zenburn-bg-1 :foreground ,zenburn-fg-05 :box unspecified))))
+   `(centaur-tabs-selected-modified ((t (:background ,zenburn-bg :foreground ,zenburn-orange :box unspecified))))
+   `(centaur-tabs-unselected-modified ((t (:background ,zenburn-bg-1 :foreground ,zenburn-orange :box unspecified))))
+   `(centaur-tabs-active-bar-face ((t (:background ,zenburn-yellow :box unspecified))))
+   `(centaur-tabs-modified-marker-selected ((t (:inherit 'centaur-tabs-selected-modified :foreground ,zenburn-yellow :box unspecified))))
+   `(centaur-tabs-modified-marker-unselected ((t (:inherit 'centaur-tabs-unselected-modified :foreground ,zenburn-yellow :box unspecified))))
 ;;;;; cider
    `(cider-result-overlay-face ((t (:background unspecified))))
    `(cider-enlightened-face ((t (:box (:color ,zenburn-orange :line-width -1)))))
@@ -481,7 +481,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(context-coloring-level-8-face ((t :foreground ,zenburn-yellow-2)))
    `(context-coloring-level-9-face ((t :foreground ,zenburn-red+1)))
 ;;;;; coq
-   `(coq-solve-tactics-face ((t (:foreground nil :inherit font-lock-constant-face))))
+   `(coq-solve-tactics-face ((t (:foreground unspecified :inherit font-lock-constant-face))))
 ;;;;; ctable
    `(ctbl:face-cell-select ((t (:background ,zenburn-blue :foreground ,zenburn-bg))))
    `(ctbl:face-continue-bar ((t (:background ,zenburn-bg-05 :foreground ,zenburn-bg))))
@@ -565,7 +565,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(diredfl-write-priv ((t (:foreground ,zenburn-magenta))))
 ;;;;; doom-modeline
    `(doom-modeline-bar  ((t (:background ,zenburn-yellow))))
-   `(doom-modeline-inactive-bar  ((t (:background nil))))
+   `(doom-modeline-inactive-bar  ((t (:background unspecified))))
 ;;;;; ediff
    `(ediff-current-diff-A ((t (:foreground ,zenburn-fg :background ,zenburn-red-4))))
    `(ediff-current-diff-Ancestor ((t (:foreground ,zenburn-fg :background ,zenburn-red-4))))
@@ -813,23 +813,23 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(guide-key/key-face ((t (:foreground ,zenburn-green))))
    `(guide-key/prefix-command-face ((t (:foreground ,zenburn-green+1))))
 ;;;;; hackernews
-   '(hackernews-comment-count ((t (:inherit link-visited :underline nil))))
-   '(hackernews-link          ((t (:inherit link         :underline nil))))
+   '(hackernews-comment-count ((t (:inherit link-visited :underline unspecified))))
+   '(hackernews-link          ((t (:inherit link         :underline unspecified))))
 ;;;;; helm
    `(helm-header
      ((t (:foreground ,zenburn-green
                       :background ,zenburn-bg
-                      :underline nil
-                      :box nil
+                      :underline unspecified
+                      :box unspecified
                       :extend t))))
    `(helm-source-header
      ((t (:foreground ,zenburn-yellow
                       :background ,zenburn-bg-1
-                      :underline nil
+                      :underline unspecified
                       :weight bold
                       :box (:line-width -1 :style released-button)
                       :extend t))))
-   `(helm-selection ((t (:background ,zenburn-bg+1 :underline nil))))
+   `(helm-selection ((t (:background ,zenburn-bg+1 :underline unspecified))))
    `(helm-selection-line ((t (:background ,zenburn-bg+1))))
    `(helm-visible-mark ((t (:foreground ,zenburn-bg :background ,zenburn-yellow-2))))
    `(helm-candidate-number ((t (:foreground ,zenburn-green+4 :background ,zenburn-bg-1))))
@@ -1210,7 +1210,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(mu4e-replied-face ((t (:foreground ,zenburn-bg+3))))
    `(mu4e-trashed-face ((t (:foreground ,zenburn-bg+3 :strike-through t))))
 ;;;;; mumamo
-   `(mumamo-background-chunk-major ((t (:background nil))))
+   `(mumamo-background-chunk-major ((t (:background unspecified))))
    `(mumamo-background-chunk-submode1 ((t (:background ,zenburn-bg-1))))
    `(mumamo-background-chunk-submode2 ((t (:background ,zenburn-bg+2))))
    `(mumamo-background-chunk-submode3 ((t (:background ,zenburn-bg+3))))
@@ -1298,7 +1298,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-time-grid ((t (:foreground ,zenburn-orange))))
    `(org-todo ((t (:weight bold :foreground ,zenburn-red :weight bold))))
    `(org-upcoming-deadline ((t (:inherit font-lock-keyword-face))))
-   `(org-warning ((t (:weight bold :foreground ,zenburn-red :weight bold :underline nil))))
+   `(org-warning ((t (:weight bold :foreground ,zenburn-red :weight bold :underline unspecified))))
    `(org-column ((t (:background ,zenburn-bg-1))))
    `(org-column-title ((t (:background ,zenburn-bg-1 :underline t :weight bold))))
    `(org-mode-line-clock ((t (:foreground ,zenburn-fg :background ,zenburn-bg-1))))
@@ -1369,7 +1369,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(proof-boring-face ((t (:foreground ,zenburn-fg :background ,zenburn-bg+2))))
    `(proof-command-mouse-highlight-face ((t (:inherit proof-mouse-highlight-face))))
    `(proof-debug-message-face ((t (:inherit proof-boring-face))))
-   `(proof-declaration-name-face ((t (:inherit font-lock-keyword-face :foreground nil))))
+   `(proof-declaration-name-face ((t (:inherit font-lock-keyword-face :foreground unspecified))))
    `(proof-eager-annotation-face ((t (:foreground ,zenburn-bg :background ,zenburn-orange))))
    `(proof-error-face ((t (:foreground ,zenburn-fg :background ,zenburn-red-4))))
    `(proof-highlight-dependency-face ((t (:foreground ,zenburn-bg :background ,zenburn-yellow-1))))
@@ -1379,8 +1379,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(proof-queue-face ((t (:background ,zenburn-red-4))))
    `(proof-region-mouse-highlight-face ((t (:inherit proof-mouse-highlight-face))))
    `(proof-script-highlight-error-face ((t (:background ,zenburn-red-2))))
-   `(proof-tacticals-name-face ((t (:inherit font-lock-constant-face :foreground nil :background ,zenburn-bg))))
-   `(proof-tactics-name-face ((t (:inherit font-lock-constant-face :foreground nil :background ,zenburn-bg))))
+   `(proof-tacticals-name-face ((t (:inherit font-lock-constant-face :foreground unspecified :background ,zenburn-bg))))
+   `(proof-tactics-name-face ((t (:inherit font-lock-constant-face :foreground unspecified :background ,zenburn-bg))))
    `(proof-warning-face ((t (:foreground ,zenburn-bg :background ,zenburn-yellow-1))))
 ;;;;; racket-mode
    `(racket-keyword-argument-face ((t (:inherit font-lock-constant-face))))
@@ -1424,8 +1424,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(realgud-overlay-arrow3 ((t (:foreground ,zenburn-orange))))
    `(realgud-bp-enabled-face ((t (:inherit error))))
    `(realgud-bp-disabled-face ((t (:inherit secondary-selection))))
-   `(realgud-bp-line-enabled-face ((t (:box (:color ,zenburn-red :style nil)))))
-   `(realgud-bp-line-disabled-face ((t (:box (:color "grey70" :style nil)))))
+   `(realgud-bp-line-enabled-face ((t (:box (:color ,zenburn-red :style unspecified)))))
+   `(realgud-bp-line-disabled-face ((t (:box (:color "grey70" :style unspecified)))))
    `(realgud-line-number ((t (:foreground ,zenburn-yellow))))
    `(realgud-backtrace-number ((t (:foreground ,zenburn-yellow, :weight bold))))
 ;;;;; regex-tool
@@ -1581,12 +1581,12 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; tab-line
    `(tab-line ((t (:background ,zenburn-bg+1))))
    `(tab-line-tab ((t (:foreground ,zenburn-fg
-                                  :background ,zenburn-bg
-                                  :weight bold
-                                  :box (:line-width -1 :style released-button)))))
+                                   :background ,zenburn-bg
+                                   :weight bold
+                                   :box (:line-width -1 :style released-button)))))
    `(tab-line-tab-inactive ((t (:foreground ,zenburn-fg
-                                           :background ,zenburn-bg+1
-                                           :box (:line-width -1 :style released-button)))))
+																						:background ,zenburn-bg+1
+																						:box (:line-width -1 :style released-button)))))
    `(tab-line-tab-current ((t (:foreground ,zenburn-fg
                                            :background ,zenburn-bg+1
                                            :box (:line-width -1 :style pressed-button)))))
@@ -1729,7 +1729,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; nrepl-client
    `(nrepl-message-colors
      '(,zenburn-red ,zenburn-orange ,zenburn-yellow ,zenburn-green ,zenburn-green+4
-       ,zenburn-cyan ,zenburn-blue+1 ,zenburn-magenta))
+										,zenburn-cyan ,zenburn-blue+1 ,zenburn-magenta))
 ;;;;; pdf-tools
    `(pdf-view-midnight-colors '(,zenburn-fg . ,zenburn-bg-05))
 ;;;;; vc-annotate
